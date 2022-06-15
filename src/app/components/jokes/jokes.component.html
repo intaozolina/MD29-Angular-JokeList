@@ -1,0 +1,5 @@
+<div class="hero">
+  <h1 class="heading">Create a joke</h1>
+  <app-joke-form (addJokeEvent)="addJoke($event)"> </app-joke-form>
+  <app-joke-list [jokes]="jokes" (deleteJokeEvent)="deleteJoke($event)"> </app-joke-list>
+</div>

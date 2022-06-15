@@ -1,0 +1,42 @@
+.joke__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  background-color: #43c7af;
+  padding: 20px;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+.joke__label {
+  color: white;
+  font-weight: lighter;
+}
+
+.joke__input {
+  min-width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: dimgrey;
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.joke__form-btn {
+  padding: 5px 15px;
+  background-color: #313131;
+  color: #43c7af;
+  border: none;
+  border-radius: 5px;
+  width: min-content;
+  cursor: pointer;
+  &:hover {
+    background-color: #274640;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

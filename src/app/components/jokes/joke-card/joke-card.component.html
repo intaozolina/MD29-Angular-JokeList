@@ -1,0 +1,6 @@
+<div class="joke__card">
+  <p class="joke__card-heading">{{ joke?.questions }}</p>
+  <p class="joke__card__paragraph" *ngIf="answerVisibility">{{ joke?.answers }}</p>
+  <button class="joke__more-btn" (click)="showAnswer()">Tell Me</button>
+  <button class="joke__delete-btn" (click)="deleteJoke()">Delete</button>
+</div>

@@ -1,0 +1,16 @@
+<form class="joke__form" [formGroup]="jokeForm">
+  <label class="joke__label">
+    Question
+    <br />
+    <input class="joke__input" #questionInput formControlName="questions" type="text" placeholder="Enter the question"/>
+  </label>
+
+  <label class="joke__label">
+    Answer
+    <br />
+    <input class="joke__input" #answerInput formControlName="answers" type="text" placeholder="Enter the punchline"/>
+  </label>
+
+  <button [disabled]="jokeForm.touched && jokeForm.invalid" class="joke__form-btn" type="button" (click)="addJoke()">Create</button>
+</form>
+
